@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<body>
+
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/11/p-1-90272170-these-houses-are-designed-to-help-puerto-rico-survive-future-storms.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://media.architecturaldigest.com/photos/5a8edf4e891f6e6a41b11fbf/16:9/w_1280,c_limit/SanMarino.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2019/05/p-3-90347755-these-off-grid-tiny-houses-have-showers-that-recycle-water-harvested-from-the-air.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://miro.medium.com/max/1400/1*W9esex_seyM89IgobTpTMg.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="imagen-principal" data-scale="2.0" data-image="https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/11/p-1-90272170-these-houses-are-designed-to-help-puerto-rico-survive-future-storms.jpg">
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="imagen-principal" data-scale="2.0" data-image="https://media.architecturaldigest.com/photos/5a8edf4e891f6e6a41b11fbf/16:9/w_1280,c_limit/SanMarino.jpg">
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="imagen-principal" data-scale="2.0" data-image="https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2019/05/p-3-90347755-these-off-grid-tiny-houses-have-showers-that-recycle-water-harvested-from-the-air.jpg">
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="imagen-principal" data-scale="2.0" data-image="https://miro.medium.com/max/1400/1*W9esex_seyM89IgobTpTMg.jpeg">
+      </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+  </div>
+
+</div>
+
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>
